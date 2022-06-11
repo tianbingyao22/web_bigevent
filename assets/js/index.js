@@ -21,10 +21,11 @@ function getUserInfo() {
 
   // 渲染用户信息
   const renderAvatar = (user) => {
+    // console.log(user);
     const name = user.nickname || user.username;
     $("#welcome").html(`欢迎 ${name}`);
     if (user.user_pic) {
-      $(".layui-nav-img").attr("scr", user.user_pic).show();
+      $(".layui-nav-img").attr("src", user.user_pic).show();
       $(".text-avatar").hide();
     } else {
       $(".layui-nav-img").hide();
