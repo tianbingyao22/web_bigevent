@@ -47,4 +47,9 @@ function getUserInfo() {
   });
 }
 
+// 切换高亮
+function change(){
+  // 高亮跳转到文章列表，文章发布取消高亮
+  $('#change').addClass('layui-this').next().removeClass('layui-this');
+}
 getUserInfo();

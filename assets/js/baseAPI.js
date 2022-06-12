@@ -1,5 +1,5 @@
 $.ajaxPrefilter((options) => {
-  options.url = "http://www.liulongbin.top:3007" + options.url;
+  options.url = "http://big-event-api-t.itheima.net" + options.url;
   // 只要请求的url中有my，那么就要注入token
   if (options.url.includes("/my/")) {
     options.headers = {
